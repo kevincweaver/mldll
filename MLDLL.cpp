@@ -88,7 +88,7 @@ DLLEXPORT double* c_mmult3(const double* __restrict matrixA, int nA, int mA,
 	return results;
 }
 
-// multiplies two matricies with a blocked algorithm 
+// multiplies two matricies with a blocked algorithm and an intermediate transpose step 
 DLLEXPORT double* c_mmult4(const double* __restrict matrixA, int nA, int mA,
 	                       const double* __restrict matrixB, int nB, int mB) {
 	double* results = (double*)_aligned_malloc(sizeof(double) * nA * mB, ALLIGNMENT);
