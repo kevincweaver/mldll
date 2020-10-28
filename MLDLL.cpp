@@ -4,7 +4,7 @@ windows library for optimized machine learning matrix operations
 
 compile with the option -LD to produce a widows dll
 eg. windows key > search "developer command prompt"
-> cl MLDLL.cpp mldll.dll /LD 
+> cl MLDLL.cpp /LD 
 */
 #include <malloc.h>
 #define DLLEXPORT extern "C" __declspec(dllexport)
